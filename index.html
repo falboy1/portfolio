@@ -1,57 +1,141 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
-    <title>Hayaton's Portfolio</title>
+    <title>hayatofolio</title>
     <meta name="description" content="とある大学院生のポートフォリオ">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <header class="main-header wrapper">
-        <h1 class="index-link">Portfolio</h1>
+    <header class="main-header">
+        <h1 class="htitle">Portfolio</h1>
         <nav>
             <ul class="header-nav">
                 <li><a>About</a></li>
                 <li><a>Skills</a></li>
                 <li><a>Works</a></li>
-                <li><a>Publication</a></li>
-                <li><a>Link</a></li>
+                <li><a>Publications</a></li>
+                <li><a>Carrer</a></li>
+                <li><a>Links</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="about-container wrapper">
-       <div class="about-profile">
-            <img src="img/etc/profile.png">
-            <h2>杉本 隼斗</h1>
-            <p>中京大学大学院 工学研究科 情報工学専攻</p>
-            <p>濱川研究室所属</p>
+    <div class="about">
+        <div class="section-title">
+            <h1>About</h1>
         </div>
 
-        <div class="about-description">
-            <h1>About</h1>
-            <p>
-                静岡県浜松市出身です。小さな頃からITに関する職業に就くことを夢みて
-                いました。現在はAIやXRなど最先端技術に興味を持っていて、大学院では
-                深層学習技術を用いた画像認識の研究を行っています。
+        <div class="about-container wrapper">
+            <div class="about-profile">
+                    <img src="img/etc/profile.png">
+                    <h2>杉本 隼斗</h2>
+            </div>
+            <p class="about-description">
+                静岡県浜松市出身です。AIやXRなど最先端技術に興味を持っていて、大学院では深層学習技術を用いた画像認識の研究を行っています。B'zが大好きで実際にライブに行ったりもしています。好きな食べ物は温泉卵で高校生の頃からほぼ毎日食べています。
             </p>
         </div>
     </div>
 
     <div class="skills-container wrapper">
-        <h1>Skills</h1>
+        <div class="section-title">
+            <h1>Skills</h1>
+        </div>
 
+        <div class="main-lang section-content">
+            <div class="lang">
+                <img src="img/icon/python-original.svg">
+                <h3>Python</h3>
+            </div>
+            <p>主に研究で使用している言語です。深層学習ではKerasとPytorchを使用しています。その他では、REST APIを使ってTwitterから対話データを収集したり、Beautiful Soup・Pandasを使用してWebページのスクレイピングとデータ操作を行いました。Flaskによるサーバサイド言語としての利用経験やeel・KivyでのGUIアプリケーションの開発経験もあります。</p>
+        </div>
+
+        <div class="main-lang section-content">
+            <div class="lang">
+                <img src="img/icon/javascript-original.svg">
+                <h3>JavaScript</h3>
+            </div>
+            <p>講義等での学習経験はありませんが、研究や趣味などで使用している言語です。主な使用経験はjQueryやネイティブでのDOM操作、Google App Scriptでの研究室業務の自動化です。現在はモダンな技術を学びたいと思い、ES6を意識したコーディング、React・TypeScript・Node.jsを利用したサービスの開発に挑戦中です。</p>
+        </div>
+
+        <div class="etc-lang section-content">
+            <div class="etc">
+                <h3 class="circle">others</h3>
+            </div>
+
+            <table>
+                <tr>
+                    <td>言語</td>
+                    <td>HTML5, C, C++, Java, PHP, Visual Basic, Swift, MySQL</td>
+                </tr>
+                <tr>
+                    <td>ツール</td>
+                    <td>Git, Adobe Premiere, Adobe XD</td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <div class="works-container wrapper">
-        <h1>Works</h1>
+        <div class="section-title">
+            <h1>Works</h1>
+        </div>
     </div>
 
-    <div class="pubilication-container wrapper">
-        <h1>Publication</h1>
+    <div class="publication-container wrapper">
+        <div class="section-title">
+            <h1>Publications</h1>
+        </div>
+        <ul class="publication-list">
+            <li><h3>2020</h3>杉本 隼斗, 久野文菜, 谷口航平, 濱川 礼: "深層学習を用いたアボカドの追熟段階分類手法の提案", 人工知能学会第34回全国大会, 2020年6月登壇</li>
+            <li><h3>2019</h3>杉本 隼斗, 中山裕貴, 渡邉 一樹, 中園 歩, 濱川 礼: "レッテルを用いた雑談向けチャットボット「Lamb」の提案", エンターテイメントコンピューティングシンポジウム, 2019年9月登壇・ポスター発表</li>
+        </ul>
+    </div>
+
+    <div class="carrer-container wrapper">
+        <div class="section-title">
+            <h1>Carrer</h1>
+        </div>
+        <table class="carrer-table section-content">
+            <tr>
+                <td>2010.4 ~ 2013.3</td>
+                <td>静岡県浜松市立天竜中学校</td>
+            </tr>
+            <tr>
+                <td>2013.4 ~ 2016.3</td>
+                <td>静岡県立磐田西高等学校</td>
+            </tr>
+            <tr>
+                <td>2016.4 ~ 2020.3</td>
+                <td>中京大学 工学部 情報工学科</td>
+            </tr>
+            <tr>
+                <td>2020.4 ~ 現在</td>
+                <td>中京大学大学院 工学研究科 情報工学専攻</td>
+            </tr>
+        </table>
     </div>
 
     <div class="link-container wrapper">
-        <h1>Link</h1>
+        <div class="section-title">
+            <h1>Link</h1>
+        </div>
+        <div class="link-icons">
+            <div>
+                <img src="img/icon/github.png">
+                <p>github</p>
+            </div>
+            <div>
+                <img src="img/icon/qiita.png">
+                <p>qiita</p>
+            </div>
+            <div>
+                <img src="img/icon/slideshare.png">
+                <p>slideshare</p>
+            </div>
+            <div>
+                <p>研究室</p>
+            </div>
+        </div>
     </div>
 </body>
