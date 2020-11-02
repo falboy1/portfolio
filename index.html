@@ -4,40 +4,89 @@
     <title>hayatofolio</title>
     <meta name="description" content="とある大学院生のポートフォリオ">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="icon" type="image/x-icon" href="img/icon/gen_egg.png">
 </head>
 
 <body>
+    <!-- ヘッダー 各項目へのリンクの配置-->
     <header class="main-header">
         <h1 class="htitle">Portfolio</h1>
         <nav>
             <ul class="header-nav">
-                <li><a>About</a></li>
-                <li><a>Skills</a></li>
-                <li><a>Works</a></li>
-                <li><a>Publications</a></li>
-                <li><a>Carrer</a></li>
-                <li><a>Links</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#carrer">Carrer</a></li>
+                <li><a href="#links">Links</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="about">
+    <!-- Aboutー 画像と自己紹介文章-->
+    <div id="about" class="about wrapper">
         <div class="section-title">
             <h1>About</h1>
         </div>
 
-        <div class="about-container wrapper">
+        <div class="about-container">
             <div class="about-profile">
                     <img src="img/etc/profile.png">
                     <h2>杉本 隼斗</h2>
             </div>
             <p class="about-description">
-                静岡県浜松市出身です。AIやXRなど最先端技術に興味を持っていて、大学院では深層学習技術を用いた画像認識の研究を行っています。B'zが大好きで実際にライブに行ったりもしています。好きな食べ物は温泉卵で高校生の頃からほぼ毎日食べています。
+                静岡県浜松市出身です。AIやXRなど最先端技術に興味を持っていて、現在大学院では深層学習技術を用いた画像認識の研究を行っています。B'zが大好きで実際にライブに行ったりもしています。好きな食べ物は温泉卵で高校生の頃からほぼ毎日食べています。
             </p>
         </div>
     </div>
 
-    <div class="skills-container wrapper">
+    <!-- Worksー 作品集 画像と説明-->
+    <div id="works" class="works-container wrapper">
+        <div class="section-title">
+            <h1>Works</h1>
+        </div>
+        <div class="section-content">
+            <div class="work">
+                <img src="img/work/avocado_eel.jpg">
+                <div class="work-description">
+                    <h3>アボカドの食べ頃分類システム</h3>
+                    <p>学部4年生の頃から深層学習でアボカドの食べ頃の分類を行う研究を行っており、それの初めてのプロトタイプです！学習用データセットの作成から人工知能の開発までを行いました。アプリケーションのGUI化はPythonのeelライブラリを使用してHTML, CSS, JavaScriptで開発しました。</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/work/lamb_eel.png">
+                <div class="work-description">
+                    <h3>レッテル貼りチャットボット Lamb</h3>
+                    <p>初めてのグループ開発・研究を行った際に開発したシステムです。レッテル貼りを会話に含むチャットボットの開発を行いました。悪いイメージがありがちなレッテル貼りをどうにかチャットボットに組み込めないかなと試行錯誤したシステムです。システム名のLambはLabeling Amusement Botの略でレッテル貼りをして人を楽しませるという意味がこめられています。</p>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="img/work/pes.png">
+                <div class="work-description">
+                    <h3>サッカーゲームの能力値からポジションを予測する人工知能</h3>
+                    <p>講義で決定木について勉強した際にPythonのScikit-learnを使用して作成したプログラムです。選手の能力値だけでなく身長や利き足などでポジションの傾向があるという仮定をもとに実験などをしました。選手の能力値をまとめているWebサイトからスクレイピングを行ってデータを抽出し、その結果を決定木に学習させました。</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Publications 過去の発表論文-->
+    <div id="publications" class="publication-container wrapper">
+        <div class="section-title">
+            <h1>Publications</h1>
+        </div>
+        <ul class="publication-list">
+            <li><h3>2020</h3>杉本 隼斗, 久野文菜, 谷口航平, 濱川 礼: "深層学習を用いたアボカドの追熟段階分類手法の提案", 人工知能学会第34回全国大会, 2020年6月登壇</li>
+            <li><h3>2019</h3>杉本 隼斗, 中山裕貴, 渡邉 一樹, 中園 歩, 濱川 礼: "レッテルを用いた雑談向けチャットボット「Lamb」の提案", エンターテイメントコンピューティングシンポジウム, 2019年9月登壇・ポスター発表</li>
+        </ul>
+    </div>
+
+    <!-- Skills 習得技術 メイン言語とその他に分割-->
+    <div id="skills" class="skills-container wrapper">
         <div class="section-title">
             <h1>Skills</h1>
         </div>
@@ -55,7 +104,7 @@
                 <img src="img/icon/javascript-original.svg">
                 <h3>JavaScript</h3>
             </div>
-            <p>講義等での学習経験はありませんが、研究や趣味などで使用している言語です。主な使用経験はjQueryやネイティブでのDOM操作、Google App Scriptでの研究室業務の自動化です。現在はモダンな技術を学びたいと思い、ES6を意識したコーディング、React・TypeScript・Node.jsを利用したサービスの開発に挑戦中です。</p>
+            <p>講義等での学習経験はありませんが、研究や趣味などで使用している言語です。主な使用経験はjQueryやネイティブでのDOM操作、Google App Scriptでの研究室業務の自動化です。現在はモダンな技術を学びたいと思い、ES6を意識したコーディング、React・TypeScript・Node.jsを利用して「課題図書Webサービス」の開発に挑戦中です。</p>
         </div>
 
         <div class="etc-lang section-content">
@@ -66,33 +115,22 @@
             <table>
                 <tr>
                     <td>言語</td>
-                    <td>HTML5, C, C++, Java, PHP, Visual Basic, Swift, MySQL</td>
+                    <td>HTML5/CSS3, C/C++, Java, PHP, Visual Basic, Dart, MySQL</td>
                 </tr>
                 <tr>
                     <td>ツール</td>
-                    <td>Git, Adobe Premiere, Adobe XD</td>
+                    <td>Git, Adobe Premiere, Adobe XD, VScode</td>
+                </tr>
+                <tr>
+                    <td>その他</td>
+                    <td>Deep Learning (主に画像)</td>
                 </tr>
             </table>
         </div>
     </div>
 
-    <div class="works-container wrapper">
-        <div class="section-title">
-            <h1>Works</h1>
-        </div>
-    </div>
-
-    <div class="publication-container wrapper">
-        <div class="section-title">
-            <h1>Publications</h1>
-        </div>
-        <ul class="publication-list">
-            <li><h3>2020</h3>杉本 隼斗, 久野文菜, 谷口航平, 濱川 礼: "深層学習を用いたアボカドの追熟段階分類手法の提案", 人工知能学会第34回全国大会, 2020年6月登壇</li>
-            <li><h3>2019</h3>杉本 隼斗, 中山裕貴, 渡邉 一樹, 中園 歩, 濱川 礼: "レッテルを用いた雑談向けチャットボット「Lamb」の提案", エンターテイメントコンピューティングシンポジウム, 2019年9月登壇・ポスター発表</li>
-        </ul>
-    </div>
-
-    <div class="carrer-container wrapper">
+     <!-- Carrer 学歴等-->
+    <div id="carrer" class="carrer-container wrapper">
         <div class="section-title">
             <h1>Carrer</h1>
         </div>
@@ -116,26 +154,39 @@
         </table>
     </div>
 
-    <div class="link-container wrapper">
+     <!-- Link 関係のあるリンク-->
+    <div id="links" class="link-container wrapper">
         <div class="section-title">
             <h1>Link</h1>
         </div>
+        
         <div class="link-icons">
             <div>
-                <img src="img/icon/github.png">
-                <p>github</p>
+                <a href="https://github.com/falboy1">
+                    <img src="img/icon/github.png">
+                    <p>github</p>
+                </a>
             </div>
             <div>
-                <img src="img/icon/qiita.png">
-                <p>qiita</p>
+                <a href="https://qiita.com/falboy">
+                    <img src="img/icon/qiita.png">
+                    <p>qiita</p>
+                </a>
             </div>
             <div>
                 <img src="img/icon/slideshare.png">
                 <p>slideshare</p>
             </div>
             <div>
-                <p>研究室</p>
+                <a href="http://hamakawalab.sist.chukyo-u.ac.jp/">
+                    <img src="img/icon/hamalb.png">
+                    <p>研究室</p>
+                </a>
             </div>
         </div>
     </div>
+
+    <foot>
+
+    </foot>
 </body>

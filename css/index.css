@@ -26,6 +26,7 @@ li {
 }
 
 
+
 /*
 ヘッダー
 --------------------------------------- */
@@ -45,6 +46,7 @@ li {
     margin-left: 5%;
 }
 
+
 .header-nav {
     display: flex;
     font-size: 1.25rem;
@@ -61,6 +63,10 @@ li {
     color: #0bd;
 }
 
+.header-nav a:link, a:visited, a:active {
+    color: white;
+}
+
 
 /* メインコンテンツ
 ----------------------------------- */
@@ -73,8 +79,9 @@ li {
 
 .section-title{
     text-align: center;
-    margin-top: 5%;
+    padding-top: 5%;
 }
+
 
 .section-content{
     margin-left: auto;
@@ -145,6 +152,7 @@ li {
 .etc-lang table{
     width: 80%;
     margin-top: 40px;
+    font-size: 0.9rem;
 }
 
 .etc h3 {
@@ -162,6 +170,19 @@ li {
 }
 
 /*Works*/
+.work {
+    display: flex;
+    margin: 8% 0;
+}
+
+.work img {
+    width: 45%;
+    margin-right: 5%;
+}
+
+.work-description {
+    width: 50%;
+}
 
 /*Carrer*/
 .carrer-table td{
@@ -188,9 +209,16 @@ li {
 .link-icons {
     display: flex;
     justify-content: space-around;
+    text-align: center;
+}
+
+.link-icons img{
+    width: 2rem;
+    height: 2rem;
 }
 
 .link-icons p{
     margin: 1px;
+    font-size: 0.9rem;
     text-align: center;
 }
