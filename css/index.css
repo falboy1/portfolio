@@ -59,11 +59,11 @@ li {
     margin-left: 36px;
 }
 
-.header-nav a:hover{
+.main-header a:hover{
     color: #0bd;
 }
 
-.header-nav a:link, a:visited, a:active {
+.main-header a:link, a:visited, a:active {
     color: white;
 }
 
