@@ -63,7 +63,15 @@ li {
     color: #0bd;
 }
 
-.main-header a:link, a:visited, a:active {
+.main-header a:link {
+    color: white;
+}
+
+.main-header a:active {
+    color: white;
+}
+
+.main-header a:visited {
     color: white;
 }
 
@@ -239,4 +247,17 @@ li {
     margin: 1px;
     font-size: 0.9rem;
     text-align: center;
+    color: #432;
+}
+
+.link-icons a:link, a:visited, a:active {
+    color: #432;
+}
+
+.link-icons a:visited, a:active {
+    color: #432;
+}
+
+.link-icons a:active {
+    color: #432;
 }
