@@ -88,6 +88,7 @@ li {
     margin-right: auto;
 }
 
+
 /*About*/
 .about {
     margin-top: 10%;
@@ -170,14 +171,31 @@ li {
 }
 
 /*Works*/
+.works {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
 .work {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     margin: 8% 0;
+    height: auto;
+    width: 100%;
+}
+
+.works section:first-child {
+    display: flex;
+    align-items: flex-start; /* new */
+    margin-bottom: 25px;
 }
 
 .work img {
     width: 45%;
     margin-right: 5%;
+    max-height: 100%;
 }
 
 .work-description {
